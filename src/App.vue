@@ -18,11 +18,10 @@
       <label><input type="checkbox" name="hobbies" v-model="userInfo.hobbies" value="영화"/>영화</label>
       <label><input type="checkbox" name="hobbies" v-model="userInfo.hobbies" value="게임"/>게임</label>
     </div>
-  </div>
-
-  <hr>
-  <h3>실시간 데이터 반영 결과:</h3>
-  <pre class="result-box">{{ userInfo }}</pre>
+    <hr>
+    <h3>실시간 데이터 반영 결과:</h3>
+    <pre class="result-box">{{ userInfo }}</pre>
+    </div>
 </template>
 
 <script setup>
@@ -41,7 +40,7 @@ const userInfo = ref({
   font-family: sans-serif;
   max-width: 400px;
   margin: 0 auto;
-  border: 1px solid #ccc  ;
+  border: 1px solid #ccc;
   border-radius: 8px;
   }
 
@@ -49,7 +48,8 @@ const userInfo = ref({
   margin-bottom: 20px;
   }
   label {
-    margin-right: 10px; cursor: pointer;
+    margin-right: 10px;
+    cursor: pointer;
   }
 
   .result-box {
